@@ -8,8 +8,13 @@ $spacing-modifiers: (
     l: 4,
     xl: 5,
     xxl: 6,
-    xxxl: 7 
+    xxxl: 7
 );
+
+$color-highlight: #76323f;
+$color-contrast: #565656;
+$color-shade-bold: #c09f80;
+$color-shade-light: #d7cec7;
 
 @mixin apply-value-to-props($props, $value) {
     @if length($props) {
@@ -24,7 +29,7 @@ $spacing-modifiers: (
 
 @mixin spacing($props, $size: m) {
     @if map-has-key($spacing-modifiers, $size) {
-        
+
         @include apply-value-to-props($props, $spacing-base * map-get($spacing-modifiers, $size));
     }
     @else {
@@ -33,13 +38,13 @@ $spacing-modifiers: (
 }
 
 @mixin full-width {
-    width: 100% !important;    
+    width: 100% !important;
 }
 
 @mixin full-width-content {
     @include full-width;
-    max-width: $max-width;  
-    @include apply-value-to-props(margin-left margin-right, auto);  
+    max-width: $max-width;
+    @include apply-value-to-props(margin-left margin-right, auto);
 }
 
 

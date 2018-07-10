@@ -9,16 +9,84 @@
 
           <ul class="main-menu">
             <li class="main-menu__item"><router-link to="/" class="main-menu__link">About</router-link></li>
-            <li class="main-menu__item"><a href="/Mehreen-Stavri-2018.pdf" target="_blank" class="main-menu__link">CV</a></li>
+            <li class="main-menu__item"><a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="main-menu__link">CV</a></li>
           </ul>
       </div>
     </header>
     <nuxt/>
+    <footer class="footer-bar">
+      <div class="footer-bar__links">
+        <a href="https://www.linkedin.com/in/mehreenstavri" title="Mehreen Stavri - Linkedin" class="footer-bar__link">
+          <linkedin-icon/>
+        </a>
+
+        <a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="footer-bar__link" >
+          <cv-icon/>
+        </a>
+      </div>
+
+
+    </footer>
   </div>
 </template>
 
+<script>
+
+import CvIcon from "vue-material-design-icons/file-pdf.vue";
+import LinkedinIcon from "vue-material-design-icons/linkedin.vue";
+
+
+export default {
+  components: {
+    CvIcon,
+    LinkedinIcon,
+  }
+}
+</script>
+
 <style lang="scss">
 @import "./styles/common.scss";
+
+.footer-bar {
+  @include full-width;
+
+  background-color: $color-shade-light;
+  text-align: center;
+  //border-top: 1px solid $color-highlight; //TODO - adds thin border along top of footer
+
+  &__links {
+    $border-size: 4px;
+    @include spacing(padding-top padding-bottom, m);
+    @include spacing(padding-left padding-right, xxl);
+    border-top: $border-size solid $color-highlight;
+    position: relative;
+    top: $border-size / -2;
+
+    @media (min-width: 400px) {
+      display: inline-block;
+      width: 30%;
+      min-width: 350px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-highlight;
+
+    &:hover {
+      color: $color-contrast;
+    }
+
+    & + & {
+      @include spacing(margin-left, s);
+    }
+  }
+
+  .material-design-icon__svg {
+    fill: currentColor;
+  }
+
+}
 
 .header-nav {
   position: fixed;
@@ -33,10 +101,10 @@
     display: flex;
     justify-content: space-between;
 
-    @include full-width-content;        
-    
+    @include full-width-content;
+
     @include spacing(padding-left padding-right, m);
-    @include spacing(padding-top padding-bottom, xl);  
+    @include spacing(padding-top padding-bottom, xl);
   }
 }
 
@@ -48,7 +116,7 @@
   }
 
   @media (min-width: 400px) {
-    &--long { 
+    &--long {
       display: block;
     }
 
@@ -64,7 +132,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
+
   &__link {
     color: #76323f;
     text-decoration: none;
