@@ -1,10 +1,78 @@
 <template>
   <div>
+    <header class="header-nav">
+      <div class="header-nav__content">
+        <div class="logo">
+          <span class="logo--short">MS</span>
+          <span class="logo--long">Mehreen Stavri</span>
+        </div>
+
+          <ul class="main-menu">
+            <li class="main-menu__link">About</li>
+            <li class="main-menu__link">CV</li>
+          </ul>
+      </div>
+    </header>
     <nuxt/>
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@import "./styles/common.scss";
+
+.header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  //background-color: #d7cec7;
+  border-bottom: 2px solid #d7cec7;
+
+  @include full-width;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @include full-width-content;        
+    
+    @include spacing(padding-left padding-right, m);
+    @include spacing(padding-top padding-bottom, xl);  
+  }
+}
+
+.logo {
+  color: #565656;
+
+  &--long {
+    display: none;
+  }
+
+  @media (min-width: 400px) {
+    &--long { 
+      display: block;
+    }
+
+    &--short {
+      display: none;
+    }
+  }
+}
+
+.main-menu {
+  height: 100%;
+  list-style: none;
+  color: #76323f;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  &__link + &__link {
+    margin-left: 20px;
+  }
+}
+
+
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;

@@ -1,34 +1,24 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
       <h1 class="title">
-        mehreen-portfolio
+        Mehreen Stavri
       </h1>
       <h2 class="subtitle">
-        Mehreen's portfolio
+        Senior User Experience Designer / Information Architect
       </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+      <p>Over 10 years’ experience in UX across multiple industries, including transport, financial services, telecom and government. 
+My experience covers a range of responsibilities, including facilitating workshops, capturing requirements, producing user journeys, and creating high-fidelity, interactive wireframes for mobile, tablet and desktop. 
+I have extensive experience of working on large-scale projects within multi-disciplinary teams and value the importance of each role at all stages of a project.</p>
+      
     </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
 
 export default {
-  components: {
-    AppLogo
-  }
+  components: {}
 }
 </script>
 

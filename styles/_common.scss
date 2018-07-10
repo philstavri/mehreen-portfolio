@@ -1,0 +1,45 @@
+$max-width: 1200px;
+$spacing-base: 4px;
+
+$spacing-modifiers: (
+    xs: 1,
+    s: 2,
+    m: 3,
+    l: 4,
+    xl: 5,
+    xxl: 6,
+    xxxl: 7 
+);
+
+@mixin apply-value-to-props($props, $value) {
+    @if length($props) {
+        @each $prop in $props {
+            #{$prop}: $value;
+        }
+    }
+    @else {
+        @error "No properties were passed"
+    }
+}
+
+@mixin spacing($props, $size: m) {
+    @if map-has-key($spacing-modifiers, $size) {
+        
+        @include apply-value-to-props($props, $spacing-base * map-get($spacing-modifiers, $size));
+    }
+    @else {
+        @error "Could not find spacing size #{$size}"
+    }
+}
+
+@mixin full-width {
+    width: 100% !important;    
+}
+
+@mixin full-width-content {
+    @include full-width;
+    max-width: $max-width;  
+    @include apply-value-to-props(margin-left margin-right, auto);  
+}
+
+
