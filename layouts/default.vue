@@ -8,8 +8,8 @@
         </div>
 
           <ul class="main-menu">
-            <li class="main-menu__link">About</li>
-            <li class="main-menu__link">CV</li>
+            <li class="main-menu__item"><router-link to="/" class="main-menu__link">About</router-link></li>
+            <li class="main-menu__item"><a href="/Mehreen-Stavri-2018.pdf" target="_blank" class="main-menu__link">CV</a></li>
           </ul>
       </div>
     </header>
@@ -61,13 +61,17 @@
 .main-menu {
   height: 100%;
   list-style: none;
-  color: #76323f;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   
-  &__link + &__link {
-    margin-left: 20px;
+  &__link {
+    color: #76323f;
+    text-decoration: none;
+  }
+
+  &__item + &__item {
+    @include spacing(margin-left, l);
   }
 }
 
