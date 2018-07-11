@@ -1,34 +1,62 @@
 <template>
-  <section class="container">
-    <div>
-      <h1 class="title">
-        Mehreen Stavri
-      </h1>
-      <h2 class="subtitle">
-        Senior User Experience Designer / Information Architect
-      </h2>
-      <p>Over 10 years’ experience in UX across multiple industries, including transport, financial services, telecom and government. 
-My experience covers a range of responsibilities, including facilitating workshops, capturing requirements, producing user journeys, and creating high-fidelity, interactive wireframes for mobile, tablet and desktop. 
-I have extensive experience of working on large-scale projects within multi-disciplinary teams and value the importance of each role at all stages of a project.</p>
-      
-    </div>
+  <section class="about-page">
+    <two-col class="about-page__content">
+        <div slot="first-col" class="foo">
+          <h1 class="title">
+            Hello!
+          </h1>
+          <h2 class="subtitle">
+            I'm Mehreen Stavri
+          </h2>
+          <p>Senior User Experience Designer / Information Architect with over 10 years’ experience in UX across multiple industries, including transport, financial services, telecom and government.</p>
+          <p class="u-margin-top-l">My experience covers a range of responsibilities, including facilitating workshops, capturing requirements, producing user journeys, and creating high-fidelity, interactive wireframes for mobile, tablet and desktop.
+      I have extensive experience of working on large-scale projects within multi-disciplinary teams and value the importance of each role at all stages of a project.</p>
+
+          <hr/>
+
+          <h2 class="subtitle">I enjoy...</h2>
+        </div>
+        <div slot="second-col">&nbsp;</div>
+      </two-col>
   </section>
 </template>
 
 <script>
+import TwoCol from "@/components/TwoCol";
 
 export default {
-  components: {}
+  components: { TwoCol }
 }
 </script>
 
-<style>
-.container {
+<style lang="scss">
+@import "./styles/tools.scss";
+
+.about-page {
+  margin-top: 65px;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background-color: $color-shade-light;
+  background-image: url(~/assets/about-background.jpg);
+  background-repeat: no-repeat;
+  background-position: left 50vw center;
+  background-size: cover;
+
+  &__content {
+    @include full-width-content;
+    height: 100%;
+  }
+
+  @media (max-width: 700px) {
+    padding-top: 200px;
+    background-position: left top;
+    background-size: contain;
+    display: flex;
+    flex-direction: column-reverse;
+
+    &__content {
+      background-color: $color-shade-light;
+    }
+  }
 }
 
 .title {

@@ -45,8 +45,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./styles/common.scss";
-
+@import "./styles/tools.scss";
 .footer-bar {
   @include full-width;
 
@@ -92,8 +91,9 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  //background-color: #d7cec7;
+  background-color: #fff;
   border-bottom: 2px solid #d7cec7;
+  height: 65px;
 
   @include full-width;
 

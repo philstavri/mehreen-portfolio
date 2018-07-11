@@ -1,0 +1,23 @@
+@import "settings";
+
+$spacing-types: margin padding;
+$spacing-directions: top right bottom left;
+
+@each $space-type in $spacing-types {
+  @each $space-modifier in map-keys($spacing-modifiers) {
+
+    .u-#{$space-type}-#{space-modifier} {
+      @include spacing($space-type, $space-modifier);
+    }
+
+    @each $space-direction in $spacing-directions {
+      $space-with-direction: #{$space-type}-#{$space-direction};
+      .u-#{$space-with-direction}-#{$space-modifier} {
+        @include spacing($space-with-direction, $space-modifier);
+      }
+    }
+
+  }
+
+}
+

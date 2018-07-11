@@ -1,0 +1,11 @@
+@import "settings";
+@import "tools";
+
+hr {
+  border: 1px solid $color-highlight;
+  width: 60%;
+  @include apply-value-to-props(margin-left margin-right, auto);
+  @include spacing(margin-top margin-bottom, xxl);
+}
+
+p {}
