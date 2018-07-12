@@ -46,6 +46,7 @@ export default {
 
 <style lang="scss">
 @import "./styles/tools.scss";
+
 .footer-bar {
   @include full-width;
 
