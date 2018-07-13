@@ -9,11 +9,14 @@
 
           <ul class="main-menu">
             <li class="main-menu__item"><router-link to="/" class="main-menu__link">About</router-link></li>
+            <li class="main-menu__item"><router-link to="/work" class="main-menu__link">Work</router-link></li>
             <li class="main-menu__item"><a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="main-menu__link">CV</a></li>
           </ul>
       </div>
     </header>
-    <nuxt/>
+    <div class="c-page">
+      <nuxt/>
+    </div>
     <footer class="footer-bar">
       <div class="footer-bar__links">
         <a href="https://www.linkedin.com/in/mehreenstavri" title="Mehreen Stavri - Linkedin" class="footer-bar__link">
@@ -45,11 +48,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./styles/tools.scss";
+@import "./styles/settings";
+@import "./styles/tools";
 
 .footer-bar {
   @include full-width;
 
+  margin-top: -$footer-height;
   background-color: $color-shade-light;
   text-align: center;
   //border-top: 1px solid $color-highlight; //TODO - adds thin border along top of footer
@@ -90,11 +95,12 @@ export default {
 
 .header-nav {
   position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
   background-color: #fff;
   border-bottom: 2px solid #d7cec7;
-  height: 65px;
+  height: $header-height;;
 
   @include full-width;
 

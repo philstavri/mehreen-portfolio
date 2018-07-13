@@ -1,11 +1,11 @@
 <template>
-  <section class="about-page">
+  <section class="about-page u-move-below-header">
     <two-col class="about-page__content">
       <div slot="first-col" class="foo">
-        <h1 class="title">
+        <h1 class="c-title">
           Hello!
         </h1>
-        <h2 class="subtitle">
+        <h2 class="c-subtitle">
           I'm Mehreen Stavri
         </h2>
         <p>Senior User Experience Designer / Information Architect with over 10 years’ experience in UX across multiple industries, including transport, financial services, telecom and government.</p>
@@ -14,7 +14,7 @@
 
         <hr/>
 
-        <h2 class="subtitle">I enjoy...</h2>
+        <h2 class="c-subtitle">I enjoy...</h2>
 
         <div class="enjoy-feature">
           <div class="enjoy-feature__column">
@@ -63,7 +63,6 @@ export default {
 @import "./styles/tools.scss";
 
 .about-page {
-  margin-top: 65px;
   min-height: 100vh;
   background-color: $color-shade-light;
   background-image: url(~/assets/about-background.jpg);
@@ -97,9 +96,9 @@ export default {
   flex-wrap: wrap;
 
   &__column {
-    flex: 1 0 33.3333%;
+    flex: 1 0 33.333%;
     min-width: 175px;
-    @include spacing(padding-left padding-right, xs);
+    @include spacing(padding-right, l);
     @include spacing(margin-bottom, xxl);
   }
 
@@ -110,24 +109,6 @@ export default {
   &__detail {
     @include spacing(margin-top, s);
   }
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
 }
 
 .links {
