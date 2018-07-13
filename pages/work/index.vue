@@ -45,10 +45,9 @@
 </template>
 
 <script>
-//TODO Support auth/login to view work
-// export default {
-//   middleware: "auth"
-// }
+export default {
+  middleware: "auth"
+}
 </script>
 
 <style lang="scss">

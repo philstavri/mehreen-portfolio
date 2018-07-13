@@ -86,11 +86,6 @@ export default {
       @include spacing(margin-left, s);
     }
   }
-
-  .material-design-icon__svg {
-    fill: currentColor;
-  }
-
 }
 
 .header-nav {
