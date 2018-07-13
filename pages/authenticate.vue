@@ -7,7 +7,7 @@
         <alert-outline-icon/> The password you entered was incorrect
       </div>
     </div>
-    <input type="password" v-model="password" class="login__password u-margin-top-xl"/>
+    <input type="password" v-model="password" class="login__password u-margin-top-xl" placeholder="Enter the password"/>
     <button class="login__submit u-margin-top-m">Log in</button>
   </form>
 </template>
@@ -32,6 +32,7 @@ export default {
         this.$store.commit("setAuthenticated", true);
         this.$router.push("work");
       } else {
+        this.password = null;
         this.loginError = true;
       }
     }
