@@ -1,13 +1,17 @@
 export function state() {
   return {
-    authenticated: false
+    authenticated: false,
+    authSuccessRouteName: "work",
   }
 }
 
 export let mutations = {
-  setAuthenticated( state, authenticated) {
+  setAuthenticated(state, authenticated) {
     state.authenticated = authenticated || false;
-  }
+  },
+  setAuthSuccessRouteName(state, routeName) {
+    state.authSuccessRouteName = routeName || "work";
+  },
 }
 
 export let getters = {

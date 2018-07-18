@@ -30,7 +30,7 @@ export default {
       //TODO move to service i.e. Auth) or similar
       if(this.password === "u$er.1s-K!n9") {
         this.$store.commit("setAuthenticated", true);
-        this.$router.push("work");
+        this.$router.push({ name: this.$store.state.authSuccessRouteName });
       } else {
         this.password = null;
         this.loginError = true;

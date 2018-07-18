@@ -9,11 +9,11 @@
       <div class="work-overview work-overview-collection__item">
         <img src="~/assets/plane-wing.jpg"/>
 
-        <h1 class="c-subtitle">Corporate travel</h1>
+        <h1 class="c-subtitle">Corporate travel A</h1>
         <p>Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love. Croissant bear claw pastry. Powder jujubes tootsie roll sweet roll cupcake jelly-o jelly candy canes. Biscuit pastry bonbon biscuit topping jelly cheesecake.</p>
-        <a href="#" class="work-overview__link">
+        <router-link to="/work/airline-group" class="work-overview__link">
           Read more
-        </a>
+        </router-link>
 
 
       </div>
