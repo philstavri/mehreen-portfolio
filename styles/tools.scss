@@ -25,10 +25,16 @@
     width: 100% !important;
 }
 
-@mixin full-width-content {
+@mixin full-width-content($responsive: false) {
     @include full-width;
     max-width: $max-width;
     @include apply-value-to-props(margin-left margin-right, auto);
+
+    @if $responsive {
+      @media(max-width: $max-width-breakpoint) {
+        @include spacing(padding-left padding-right, m);
+      }
+    }
 }
 
 

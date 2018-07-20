@@ -26,18 +26,10 @@
 
   &__first-col {
     @include spacing(padding-right, l);
-
-    @media (max-width: $max-width-breakpoint) {
-      @include spacing(padding-left, m);
-    }
   }
 
   &__second-col {
     @include spacing(padding-left, l);
-
-    @media (max-width: $max-width-breakpoint) {
-      @include spacing(padding-right, m);
-    }
   }
 
   @media (max-width: 700px) {
@@ -45,6 +37,11 @@
 
     &__column {
       width: 100%;
+      @include apply-value-to-props(padding-left padding-right, 0);
+    }
+
+    &__second-col {
+      @include spacing(margin-top, l);
     }
   }
 }

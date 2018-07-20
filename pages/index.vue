@@ -1,7 +1,7 @@
 <template>
   <section class="about-page u-move-below-header">
     <two-col class="about-page__content">
-      <div slot="first-col" class="foo">
+      <div slot="first-col" class="u-padding-left-m u-padding-right-m">
         <h1 class="c-title">
           Hello!
         </h1>
