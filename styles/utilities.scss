@@ -20,9 +20,12 @@ $spacing-directions: top right bottom left;
   }
 
 }
+$align-positions: center, left, right;
 
-.u-align-center {
-  text-align: center !important;
+@each $position in $align-positions {
+  .u-align-#{$position} {
+    text-align: $position !important;
+  }
 }
 
 .u-move-below-header {

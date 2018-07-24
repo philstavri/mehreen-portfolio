@@ -5,7 +5,7 @@
         <h1 class="c-title">
           Hello!
         </h1>
-        <h2 class="c-subtitle">
+        <h2 class="c-title--secondary">
           I'm Mehreen Stavri
         </h2>
         <p>Senior User Experience Designer / Information Architect with over 10 years’ experience in UX across multiple industries, including transport, financial services, telecom and government.</p>
@@ -14,7 +14,7 @@
 
         <hr/>
 
-        <h2 class="c-subtitle">I enjoy...</h2>
+        <h2 class="c-title--secondary">I enjoy...</h2>
 
         <div class="enjoy-feature">
           <div class="enjoy-feature__column">

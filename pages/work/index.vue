@@ -1,7 +1,7 @@
 <template>
   <section class="work-page u-move-below-header u-full-width">
     <div class="u-align-center u-full-width-content u-margin-top-xxl">
-      <h1 class="c-subtitle">Work</h1>
+      <h1 class="c-title--secondary">Work</h1>
       <p>This is a collection of my work</p>
       <hr/>
     </div>
@@ -9,7 +9,7 @@
       <div class="work-overview work-overview-collection__item">
         <img src="~/assets/plane-wing.jpg"/>
 
-        <h1 class="c-subtitle">Corporate travel A</h1>
+        <h1 class="c-title--secondary">Corporate travel A</h1>
         <p>Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love. Croissant bear claw pastry. Powder jujubes tootsie roll sweet roll cupcake jelly-o jelly candy canes. Biscuit pastry bonbon biscuit topping jelly cheesecake.</p>
         <router-link to="/work/airline-group" class="work-overview__link">
           Read more
@@ -20,7 +20,7 @@
       <div class="work-overview work-overview-collection__item">
         <img src="~/assets/plane-wing.jpg"/>
 
-        <h1 class="c-subtitle">Corporate travel</h1>
+        <h1 class="c-title--secondary">Corporate travel</h1>
         <p>Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love. Croissant bear claw pastry. Powder jujubes tootsie roll sweet roll cupcake jelly-o jelly candy canes. Biscuit pastry bonbon biscuit topping jelly cheesecake.</p>
         <a href="#" class="work-overview__link">
           Read more
@@ -32,7 +32,7 @@
         <div class="work-overview__image-container">
           <img src="~/assets/plane-wing.jpg"/>
         </div>
-        <h1 class="c-subtitle">Corporate travel</h1>
+        <h1 class="c-title--secondary">Corporate travel</h1>
         <p>Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love. Croissant bear claw pastry. Powder jujubes tootsie roll sweet roll cupcake jelly-o jelly candy canes. Biscuit pastry bonbon biscuit topping jelly cheesecake.</p>
         <a href="#" class="work-overview__link">
           Read more
