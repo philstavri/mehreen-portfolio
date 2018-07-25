@@ -39,4 +39,5 @@ module.exports = {
     }
   },
   mode: "spa",
+  plugins: ["~/plugins/modernizr-plugin"]
 }
