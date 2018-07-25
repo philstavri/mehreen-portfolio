@@ -2,10 +2,6 @@
   <div>
     <header class="header-nav">
       <div class="header-nav__content">
-        <!-- <div class="logo">
-          <span class="logo--short">MS</span>
-          <span class="logo--long">Mehreen Stavri</span>
-        </div> -->
         <app-logo/>
 
         <ul class="main-menu">
@@ -113,24 +109,6 @@ export default {
     @include full-width-content;
 
     @include spacing(padding-left padding-right, m);
-  }
-}
-
-.logo {
-  color: #565656;
-
-  &--long {
-    display: none;
-  }
-
-  @media (min-width: 400px) {
-    &--long {
-      display: block;
-    }
-
-    &--short {
-      display: none;
-    }
   }
 }
 
