@@ -2,8 +2,11 @@
 @import "tools";
 
 hr {
-  border: 1px solid $color-highlight;
+  border: none;
+  height: 2px;
   width: 60%;
+
+  @include background-shade;
   @include apply-value-to-props(margin-left margin-right, auto);
   @include spacing(margin-top margin-bottom, xxl);
 }

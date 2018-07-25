@@ -2,16 +2,17 @@
   <div>
     <header class="header-nav">
       <div class="header-nav__content">
-        <div class="logo">
+        <!-- <div class="logo">
           <span class="logo--short">MS</span>
           <span class="logo--long">Mehreen Stavri</span>
-        </div>
+        </div> -->
+        <app-logo/>
 
-          <ul class="main-menu">
-            <li class="main-menu__item"><router-link to="/" class="main-menu__link">About</router-link></li>
-            <li class="main-menu__item"><router-link to="/work" class="main-menu__link">Work</router-link></li>
-            <li class="main-menu__item"><a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="main-menu__link">CV</a></li>
-          </ul>
+        <ul class="main-menu">
+          <li class="main-menu__item"><router-link to="/" class="main-menu__link">About</router-link></li>
+          <li class="main-menu__item"><router-link to="/work" class="main-menu__link">Work</router-link></li>
+          <li class="main-menu__item"><a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="main-menu__link">CV</a></li>
+        </ul>
       </div>
     </header>
     <div class="c-page">
@@ -34,13 +35,14 @@
 </template>
 
 <script>
-
+import AppLogo from "@/components/AppLogo";
 import CvIcon from "vue-material-design-icons/file-pdf.vue";
 import LinkedinIcon from "vue-material-design-icons/linkedin.vue";
 
 
 export default {
   components: {
+    AppLogo,
     CvIcon,
     LinkedinIcon,
   }
@@ -94,19 +96,23 @@ export default {
   top: 0;
   left: 0;
   background-color: #fff;
-  border-bottom: 2px solid #d7cec7;
-  height: $header-height;;
+  height: $header-height;
+
+  //todo - choose header edge style: color line, shadow or none
+  box-shadow: 0 0 10px -5px #000;
+  //border-bottom: 2px solid $color-shade-light;
 
   @include full-width;
 
   &__content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 
     @include full-width-content;
 
     @include spacing(padding-left padding-right, m);
-    @include spacing(padding-top padding-bottom, xl);
   }
 }
 
