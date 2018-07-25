@@ -69,6 +69,9 @@ import HeroBanner from "@/components/HeroBanner";
 import TwoCol from "@/components/TwoCol";
 
 export default {
+  meta: {
+    linkedMenuRoute: "work"
+  },
   middleware: "auth",
   components: {
     DetailSection,

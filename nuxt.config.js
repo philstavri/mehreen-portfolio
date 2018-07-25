@@ -39,5 +39,8 @@ module.exports = {
     }
   },
   mode: "spa",
-  plugins: ["~/plugins/modernizr-plugin"]
+  plugins: ["~/plugins/modernizr-plugin"],
+  router: {
+    middleware: "meta",
+  }
 }

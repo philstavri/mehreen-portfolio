@@ -46,6 +46,9 @@
 
 <script>
 export default {
+  meta: {
+    linkedMenuRoute: "work"
+  },
   middleware: "auth"
 }
 </script>

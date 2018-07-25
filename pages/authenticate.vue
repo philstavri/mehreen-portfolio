@@ -25,6 +25,9 @@ export default {
       loginError: false,
     };
   },
+  meta: {
+    linkedMenuRoute: "work"
+  },
   methods: {
     authenticate() {
       //TODO move to service i.e. Auth) or similar

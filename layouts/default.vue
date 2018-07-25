@@ -5,8 +5,8 @@
         <app-logo/>
 
         <ul class="main-menu">
-          <li class="main-menu__item"><router-link to="/" class="main-menu__link">About</router-link></li>
-          <li class="main-menu__item"><router-link to="/work" class="main-menu__link">Work</router-link></li>
+          <li class="main-menu__item"><router-link to="/" class="main-menu__link" v-bind:class="{'main-menu__link--current': isCurrentRoute('index')}">About</router-link></li>
+          <li class="main-menu__item"><router-link to="/work" class="main-menu__link" v-bind:class="{'main-menu__link--current': isCurrentRoute('work')}">Work</router-link></li>
           <li class="main-menu__item"><a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="main-menu__link">CV</a></li>
         </ul>
       </div>
@@ -41,6 +41,11 @@ export default {
     AppLogo,
     CvIcon,
     LinkedinIcon,
+  },
+  methods: {
+    isCurrentRoute(route) {
+      return this.$store.state.meta.linkedMenuRoute === route;
+    }
   }
 }
 </script>
@@ -113,23 +118,52 @@ export default {
 }
 
 .main-menu {
-  height: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 
   &__link {
     color: #76323f;
     text-decoration: none;
+    outline: none;
+
+    &:after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        display: block;
+      }
+
+    &:hover,
+    &:focus,
+    &:active {
+      &:after {
+        background-color: $color-highlight;
+      }
+    }
+
+    &--current {
+      &:after {
+        @include background-shade;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        &:after {
+          background-size: 200% 100%;
+        }
+      }
+    }
+
   }
 
-  &__item + &__item {
-    @include spacing(margin-left, l);
+  &__item {
+    & + & {
+      @include spacing(margin-left, l);
+    }
   }
 }
-
-
 
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

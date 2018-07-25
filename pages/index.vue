@@ -55,7 +55,10 @@ import LinkedinIcon from "vue-material-design-icons/linkedin.vue";
 import TwoCol from "@/components/TwoCol";
 
 export default {
-  components: { TwoCol, CvIcon, LinkedinIcon }
+  components: { TwoCol, CvIcon, LinkedinIcon },
+  meta: {
+    linkedMenuRoute: "index"
+  },
 };
 </script>
 
