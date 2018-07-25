@@ -52,7 +52,7 @@
         </div>
       </two-col>
     </detail-section>
-    <detail-section title="Personal achievements">
+    <detail-section title="Personal achievements" :hide-separator="true">
       <ul>
         <li>Nulla nulla Lorem esse et.</li>
         <li>Veniam ex incididunt reprehenderit cupidatat laboris deserunt eu.</li>

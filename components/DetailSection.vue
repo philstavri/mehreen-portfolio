@@ -1,7 +1,7 @@
 <template>
-  <section class="detail-section">
+  <section class="detail-section" v-bind:class="{ 'detail-section--hide-separator': hideSeparator }">
     <h1 class="detail-section__title">{{title}}</h1>
-    <div class="detail-section__content">
+    <div class="detail-section__content" >
       <slot></slot>
     </div>
   </section>
@@ -10,7 +10,8 @@
 <script>
 export default {
   props: {
-    title: String
+    title: String,
+    hideSeparator: Boolean
   }
 }
 </script>
@@ -20,8 +21,8 @@ export default {
 @import "./styles/tools";
 
 .detail-section {
-  @include spacing(padding-bottom, l);
-  @include spacing(padding-top, xxl);
+  @include spacing(padding-bottom, xxxl);
+  @include spacing(padding-top, l);
   text-align: center;
 
   // todo - choose section end: single colour, shade full width, shade short fixed width or none
@@ -43,9 +44,15 @@ export default {
     height: 3px;
     width: 100px;
     @include apply-value-to-props(margin-left margin-right, auto);
-    @include spacing(margin-top margin-bottom, xxl);
+    @include spacing(margin-top, xxxl);
     display: block;
     content: "";
+  }
+
+  &--hide-separator {
+    &:after {
+      height: 0;
+    }
   }
 
   &--background-bold {
@@ -72,7 +79,7 @@ export default {
     color: $color-highlight;
     display: inline-block;
 
-    @include spacing(margin-bottom, xl);
+    @include spacing(margin-bottom, xxxl);
 
     // &:after {
     //   content: "";
