@@ -6,9 +6,9 @@
           Hello!
         </h1>
         <h2 class="c-title--secondary">
-          I'm Mehreen Stavri
+          I'm Mehreen
         </h2>
-        <p>Senior User Experience Designer / Information Architect with over 10 years’ experience in UX across multiple industries, including transport, financial services, telecom and government.</p>
+        <p>I'm a Senior User Experience Designer / Information Architect with over 10 years’ experience in UX across multiple industries, including transport, financial services, telecom and government.</p>
         <p class="u-margin-top-l">My experience covers a range of responsibilities, including facilitating workshops, capturing requirements, producing user journeys, and creating high-fidelity, interactive wireframes for mobile, tablet and desktop.</p>
         <p class="u-margin-top-l">I have extensive experience of working on large-scale projects within multi-disciplinary teams and value the importance of each role at all stages of a project.</p>
 
@@ -38,7 +38,7 @@
           </a>
 
           <a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="footer-bar__link">
-            <cv-icon/>
+            CV
           </a>
         </div>
 

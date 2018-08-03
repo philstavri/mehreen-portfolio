@@ -1,7 +1,7 @@
 <template>
   <section class="detail-section" v-bind:class="{ 'detail-section--hide-separator': hideSeparator }">
     <h1 class="detail-section__title">{{title}}</h1>
-    <div class="detail-section__content" >
+    <div class="detail-section__content" v-bind:class="{'detail-section__content--align-center': alignCenter }">
       <slot></slot>
     </div>
   </section>
@@ -11,7 +11,8 @@
 export default {
   props: {
     title: String,
-    hideSeparator: Boolean
+    hideSeparator: Boolean,
+    alignCenter: Boolean
   }
 }
 </script>
@@ -99,6 +100,10 @@ export default {
   &__content {
     @include full-width-content($responsive: true);
     text-align: left;
+
+    &--align-center {
+      text-align: center;
+    }
   }
 }
 </style>

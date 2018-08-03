@@ -5,12 +5,24 @@
       <p>This is a collection of my work</p>
       <hr/>
     </div>
+    <two-col class="u-full-width-content" :flush="true">
+      <div slot="first-col">
+        <cover-image url="~/assets/ti-scrapbook-empty.png" height="400px"/>
+      </div>
+      <div slot="second-col" class="u-background-color-highlight block-color">
+        <h1 class="c-title--secondary">Tourism Ireland - Scrapbook</h1>
+        <p>Providing users with a means to save and share items of interest.</p>
+        <router-link to="/work/airline-group" class="work-overview__link">
+          Read more
+        </router-link>
+      </div>
+    </two-col>
     <div class="work-overview-collection">
       <div class="work-overview work-overview-collection__item">
-        <img src="~/assets/plane-wing.jpg"/>
+        <img src="~/assets/ti-scrapbook-empty.png"/>
 
-        <h1 class="c-title--secondary">Corporate travel A</h1>
-        <p>Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love. Croissant bear claw pastry. Powder jujubes tootsie roll sweet roll cupcake jelly-o jelly candy canes. Biscuit pastry bonbon biscuit topping jelly cheesecake.</p>
+        <h1 class="c-title--secondary">Tourism Ireland - Scrapbook</h1>
+        <p>Providing users with a means to save and share items of interest.</p>
         <router-link to="/work/airline-group" class="work-overview__link">
           Read more
         </router-link>
@@ -45,7 +57,13 @@
 </template>
 
 <script>
+import CoverImage from "@/components/CoverImage";
+import TwoCol from "@/components/TwoCol";
 export default {
+  components: {
+    CoverImage,
+    TwoCol
+  },
   meta: {
     linkedMenuRoute: "work"
   },
@@ -56,6 +74,11 @@ export default {
 <style lang="scss">
 @import "./styles/settings";
 @import "./styles/tools";
+
+.block-color {
+  height: 100%;
+  @include spacing(padding, l);
+}
 
 .work-overview-collection {
   @include full-width-content;

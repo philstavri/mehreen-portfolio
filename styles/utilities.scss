@@ -40,3 +40,20 @@ $align-positions: center, left, right;
   @include full-width-content;
 }
 
+.u-background-color-highlight {
+  background-color: $color-highlight;
+  color: #fff;
+}
+.u-background-color-contrast {
+  background-color: $color-contrast;
+  color: #333;
+}
+.u-background-color-bold {
+  background-color: $color-shade-bold;
+  color: #333;
+}
+.u-background-color-light {
+  background-color: $color-shade-light;
+  color: $color-contrast;
+}
+

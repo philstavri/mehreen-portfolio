@@ -1,7 +1,8 @@
 <template>
   <form class="u-move-below-header u-full-width-content u-align-center" @submit.prevent="authenticate()">
     <h1 class="u-margin-top-xxxl c-title--secondary">Log in to see my work</h1>
-    <p>To request a password contact me on <a href="https://www.linkedin.com/in/mehreenstavri">linkedin</a></p>
+    <p>Due to privacy reasons, please <a href="https://www.linkedin.com/in/mehreenstavri">contact me</a> for login details to view samples of my work.</p>
+    <p>Thank you, Mehreen</p>
     <div class="u-margin-top-xl u-margin-bottom-xl" v-if="loginError">
       <div class="login__error-message">
         <alert-outline-icon/> The password you entered was incorrect

@@ -21,7 +21,7 @@
         </a>
 
         <a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="footer-bar__link" >
-          <cv-icon/>
+          CV
         </a>
       </div>
 
