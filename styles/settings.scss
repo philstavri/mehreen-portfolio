@@ -16,13 +16,17 @@ $spacing-modifiers: (
     xxxl: 10
 );
 
-$color-highlight: #76323f;
-$color-contrast: #565656;
-$color-shade-bold: #c09f80;
-$color-shade-light: #d7cec7;
+$color-1: #bfd8d2;
+$color-2: #fedcd2;
+$color-3: #df744a;
+$color-4: #dcb239;
+
+
+$highlight-1: #6bbaa7;
+$highlight-2: #fba100;
 
 $shade-position: 35%;
 $shade-gap: 1%;
 $shade-change-position: $shade-position + $shade-gap;
-$shade: linear-gradient(110deg, $color-shade-bold $shade-position,rgba(0,0,0,0) $shade-position),
-        linear-gradient(110deg, $color-shade-light $shade-change-position, $color-highlight $shade-change-position);
+$shade: linear-gradient(110deg, $color-3 $shade-position,rgba(0,0,0,0) $shade-position),
+        linear-gradient(110deg, $color-4 $shade-change-position, $color-1 $shade-change-position);

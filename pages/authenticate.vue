@@ -52,10 +52,10 @@ export default {
 .login {
   &__error-message {
     display: inline-block;
-    border: 1px solid $color-highlight;
+    border: 1px solid $color-1;
     border-radius: 3px;
-    background-color: $color-shade-light;
-    color: $color-highlight;
+    background-color: $color-4;
+    color: $color-1;
     @include spacing(padding-top padding-bottom, s);
     @include spacing(padding-left padding-right, l);
   }

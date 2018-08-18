@@ -22,7 +22,7 @@ export default {
   },
   computed: {
     imageStyles() {
-      let backgroundImageStyle = `background-image: url(${require(this.url)}); `;
+      let backgroundImageStyle = `background-image: url(${this.url}); `;
       let heightStyle;
 
       if(this.height) {

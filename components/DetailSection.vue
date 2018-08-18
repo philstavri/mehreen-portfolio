@@ -28,7 +28,7 @@ export default {
 
   // todo - choose section end: single colour, shade full width, shade short fixed width or none
 
-  //border-bottom: 1px solid $color-shade-bold; //single colour section end
+  //border-bottom: 1px solid $color-3; //single colour section end
 
   // shade section end
   // &:after {
@@ -57,27 +57,27 @@ export default {
   }
 
   &--background-bold {
-    background-color: $color-shade-bold;
+    background-color: $color-3;
   }
 
   &--background-contrast {
-    background-color: $color-contrast;
+    background-color: $color-2;
     color: white;
   }
 
   &--background-highlight {
-    background-color: $color-highlight;
+    background-color: $color-1;
     color: white;
   }
 
   &--background-light {
-    background-color: $color-shade-light;
+    background-color: $color-4;
   }
 
   &__title {
     font-weight: 500;
     font-size: 32px;
-    color: $color-highlight;
+    color: $color-1;
     display: inline-block;
 
     @include spacing(margin-bottom, xxxl);
@@ -90,7 +90,7 @@ export default {
     //   min-width: 100px;
     //   height: 2px;
     //   @include background-shade;
-    //   //border-bottom: 2px solid $color-highlight;
+    //   //border-bottom: 2px solid $color-1;
     //   @include spacing(margin-top, s);
     //   @include apply-value-to-props(margin-left margin-right, auto);
     //   @include spacing(margin-bottom, xs);

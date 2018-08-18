@@ -58,15 +58,15 @@ export default {
   @include full-width;
 
   margin-top: -$footer-height;
-  background-color: $color-shade-light;
+  background-color: $color-4;
   text-align: center;
-  //border-top: 1px solid $color-highlight; //TODO - adds thin border along top of footer
+  //border-top: 1px solid $color-1; //TODO - adds thin border along top of footer
 
   &__links {
     $border-size: 4px;
     @include spacing(padding-top padding-bottom, m);
     @include spacing(padding-left padding-right, xxl);
-    border-top: $border-size solid $color-highlight;
+    border-top: $border-size solid $color-1;
     position: relative;
     top: $border-size / -2;
 
@@ -79,10 +79,10 @@ export default {
 
   &__link {
     text-decoration: none;
-    color: $color-highlight;
+    color: $color-1;
 
     &:hover {
-      color: $color-contrast;
+      color: $color-2;
     }
 
     & + & {
@@ -101,7 +101,7 @@ export default {
 
   //todo - choose header edge style: color line, shadow or none
   box-shadow: 0 0 10px -5px #000;
-  //border-bottom: 2px solid $color-shade-light;
+  //border-bottom: 2px solid $color-4;
 
   @include full-width;
 
@@ -118,12 +118,14 @@ export default {
 }
 
 .main-menu {
+  $link-color: #373737;
+
   list-style: none;
   display: flex;
   justify-content: flex-end;
 
   &__link {
-    color: #76323f;
+    color: $link-color!important;
     text-decoration: none;
     outline: none;
 
@@ -138,21 +140,13 @@ export default {
     &:focus,
     &:active {
       &:after {
-        background-color: $color-highlight;
+        background-color: $highlight-2;
       }
     }
 
     &--current {
       &:after {
-        @include background-shade;
-      }
-
-      &:hover,
-      &:focus,
-      &:active {
-        &:after {
-          background-size: 200% 100%;
-        }
+         background-color: $highlight-1;
       }
     }
 

@@ -18,22 +18,36 @@
         <li>Produced high-fidelity, annotated wireframes to cover all key user journeys.</li>
         <li>Documented and presented user journeys and wireframes.</li>
         <li>Worked alongside designers and front end developers to produce the Scrapbook functionality on Ireland.com.</li>
-
-
       </ul>
-      <two-col class="">
-        <div slot="first-col"></div>
-        <div slot="second-col">
-          <img src='https://placehold.it/600x300?text=Approach%20phase%203' alt='Apprach phase 3'/>
-        </div>
-      </two-col>
+
+      <div class="u-align-center">
+        <p class="u-margin-top-l">* Note: screenshots taken from website.</p>
+
+
+        <img class="u-full-width" src="~/assets/ti-user-scenarios.png" title="User scenarios"/>
+        <p class="">User scenarios</p>
+
+
+        <img class="u-full-width" src="~/assets/ti-not-signed-in-adding-item.png" title="Signed in/not signed in, Adding first item"/>
+        <p class="">Signed in/not signed in, Adding first item</p>
+
+
+        <img class="u-full-width" src="~/assets/ti-signed-in-adding-item.png" title="Signed in, Adding an item to a particular scrapbook"/>
+        <p class="">Signed in, Adding an item to a particular scrapbook</p>
+
+
+        <img class="u-full-width" src="~/assets/ti-signed-in-scrapbook-overview.png" title="Signed in - overview scrapbooks [view]"/>
+        <p class="">Signed in - overview scrapbooks [view]</p>
+
+
+        <img class="u-full-width" src="~/assets/ti-signed-in-single-scrapbook.png" title="Signed in, single scrapbook [view]"/>
+        <p class="caption">Signed in, single scrapbook [view]</p>
+      </div>
     </detail-section>
     <detail-section title="Output / Outcomes" :align-center="true">
      <p class="u-margin-bottom-xl">An easy to use, responsive Scrapbook tool that allows users to collect and share content on Ireland.com, to assist them in planning a trip.</p>
      <p><a href="https://www.ireland.com/en-gb/">https://www.ireland.com/en-gb/</a></p>
      <p><a href="https://www.ireland.com/en-gb/scrapbook/">https://www.ireland.com/en-gb/scrapbook/</a></p>
-
-     <p class="u-margin-top-l">* Note: screenshots taken from website.</p>
 
 
     </detail-section>
@@ -48,6 +62,7 @@
 </template>
 
 <script>
+import CoverImage from "@/components/CoverImage";
 import DetailSection from "@/components/DetailSection";
 import HeroBanner from "@/components/HeroBanner";
 import TwoCol from "@/components/TwoCol";
@@ -58,6 +73,7 @@ export default {
   },
   middleware: "auth",
   components: {
+    CoverImage,
     DetailSection,
     HeroBanner,
     TwoCol,
@@ -65,4 +81,18 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "./styles/settings";
+@import "./styles/tools";
+
+.caption {
+  background-color: $color-2;
+  color: #fff;
+  text-align: center;
+  @include spacing(margin-bottom, xxxl);
+  @include spacing(padding, s);
+
+  position: relative;
+  top: -3px;
+}
+</style>

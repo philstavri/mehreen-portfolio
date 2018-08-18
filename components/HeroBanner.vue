@@ -35,8 +35,8 @@ export default {
     position: relative;
     top: 50vh;
     left: 5vw;
-    color: $color-shade-bold;
-    background-color: rgba($color-highlight, 0.4);
+    color: $color-3;
+    background-color: rgba($color-1, 0.4);
     display: inline-block;
     @include spacing(padding, m);
   }
@@ -50,7 +50,7 @@ export default {
 
   &__tags {
     @include spacing(margin-top, s);
-    border-top: 1px solid $color-shade-bold;
+    border-top: 1px solid $color-3;
     display: table;
     width: 100%;
     font-size: 2.5vh;

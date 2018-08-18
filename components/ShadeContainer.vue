@@ -43,7 +43,7 @@ export default {
   }
 
   &__content {
-    color: $color-highlight;
+    color: $color-1;
 
     &--shade-text{
       @include background-shade;

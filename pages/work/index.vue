@@ -7,7 +7,7 @@
     </div>
     <two-col class="u-full-width-content" :flush="true">
       <div slot="first-col">
-        <cover-image url="~/assets/ti-scrapbook-empty.png" height="400px"/>
+        <cover-image :url="require('~/assets/ti-scrapbook-empty.png')" height="400px"/>
       </div>
       <div slot="second-col" class="u-background-color-highlight block-color">
         <h1 class="c-title--secondary">Tourism Ireland - Scrapbook</h1>
@@ -118,16 +118,16 @@ export default {
   &__link {
     @include spacing(padding, s);
     @include spacing(margin-top, l);
-    border: 1px solid $color-highlight;
+    border: 1px solid $color-1;
     display: inline-block;
 
-    color: $color-highlight;
+    color: $color-1;
     border-radius: 3px;
     text-decoration: none;
 
     &:hover {
       text-decoration: none;
-      background-color: $color-highlight;
+      background-color: $color-1;
       color: white;
     }
   }

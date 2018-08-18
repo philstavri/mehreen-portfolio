@@ -64,10 +64,9 @@ export default {
 
 <style lang="scss">
 @import "./styles/tools.scss";
-
 .about-page {
   min-height: 100vh;
-  background-color: $color-shade-light;
+  background-color: $color-1;
   background-image: url(~/assets/about-background.jpg);
   background-repeat: no-repeat;
   background-position: left 50vw center;
@@ -88,7 +87,7 @@ export default {
     flex-direction: column-reverse;
 
     &__content {
-      background-color: $color-shade-light;
+      background-color: $color-1;
     }
   }
 }

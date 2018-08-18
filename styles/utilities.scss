@@ -41,19 +41,19 @@ $align-positions: center, left, right;
 }
 
 .u-background-color-highlight {
-  background-color: $color-highlight;
+  background-color: $color-1;
   color: #fff;
 }
 .u-background-color-contrast {
-  background-color: $color-contrast;
+  background-color: $color-2;
   color: #333;
 }
 .u-background-color-bold {
-  background-color: $color-shade-bold;
+  background-color: $color-3;
   color: #333;
 }
 .u-background-color-light {
-  background-color: $color-shade-light;
-  color: $color-contrast;
+  background-color: $color-4;
+  color: $color-2;
 }
 

@@ -1,27 +1,19 @@
 <template>
-  <shade-container :can-shade-text="true">
     <div class="app-logo">
       <span class="app-logo__short">MS</span>
-      <span class="app-logo__long"><strong>Mehreen Stavri</strong></span>
+      <span class="app-logo__long">Mehreen Stavri</span>
     </div>
-  </shade-container>
 </template>
-
-<script>
-import ShadeContainer from "@/components/ShadeContainer";
-
-export default {
-  components: {
-    ShadeContainer,
-  }
-}
-</script>
 
 <style lang="scss">
 @import "./styles/settings";
 @import "./styles/tools";
 
 .app-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: normal;
+
   &__long {
     display: none;
   }
