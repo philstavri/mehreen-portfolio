@@ -2,15 +2,12 @@
   <section class="about-page u-move-below-header">
     <two-col class="about-page__content">
       <div slot="first-col" class="u-padding-left-m u-padding-right-m">
-        <h1 class="c-title">
-          Hello!
+        <h1 class="c-title u-margin-bottom-l u-margin-top-xxl u-color-highlight-2">
+          Hello, I'm Mehreen
         </h1>
-        <h2 class="c-title--secondary">
-          I'm Mehreen
-        </h2>
         <p>I'm a Senior User Experience Designer / Information Architect with over 10 years’ experience in UX across multiple industries, including transport, financial services, telecom and government.</p>
-        <p class="u-margin-top-l">My experience covers a range of responsibilities, including facilitating workshops, capturing requirements, producing user journeys, and creating high-fidelity, interactive wireframes for mobile, tablet and desktop.</p>
-        <p class="u-margin-top-l">I have extensive experience of working on large-scale projects within multi-disciplinary teams and value the importance of each role at all stages of a project.</p>
+        <p class="u-margin-top-xl">My experience covers a range of responsibilities, including facilitating workshops, capturing requirements, producing user journeys, and creating high-fidelity, interactive wireframes for mobile, tablet and desktop.</p>
+        <p class="u-margin-top-xl">I have extensive experience of working on large-scale projects within multi-disciplinary teams and value the importance of each role at all stages of a project.</p>
 
         <hr/>
 
@@ -18,26 +15,26 @@
 
         <div class="enjoy-feature">
           <div class="enjoy-feature__column">
-            <h3 class="enjoy-feature__column-title">Exploring</h3>
-            <p class="enjoy-feature__detail">Lorem ipsum dolor sizzle amet, consectetuer adipiscing my shizz. We gonna chung dope velizzle, the bizzle volutpat, suscipizzle quizzle, gravida funky fresh, i saw beyonces tizzles and my pizzle went crizzle.</p>
+            <h3 class="enjoy-feature__column-title c-title--tertiary">Exploring</h3>
+            <p class="enjoy-feature__detail">Discover new opportunities to improve usability.</p>
           </div>
           <div class="enjoy-feature__column">
-            <h3 class="enjoy-feature__column-title">Analysing</h3>
-            <p class="enjoy-feature__detail">Pellentesque izzle tortor. Sed bow wow wow. Cool izzle yo dapibus phat tempizzle tempor. Hizzle pellentesque nibh izzle shut the shizzle up. Vestibulum check it out tortizzle. Mofo gizzle that's the shizzle doggy. </p>
+            <h3 class="enjoy-feature__column-title c-title--tertiary">Analysing</h3>
+            <p class="enjoy-feature__detail">Drill down, investigate and understand the user’s needs.</p>
           </div>
           <div class="enjoy-feature__column">
-            <h3 class="enjoy-feature__column-title">Creating</h3>
-            <p class="enjoy-feature__detail"> In hac habitasse platea dictumst. Yippiyo dapibizzle. Curabitur tellus gangsta, pretium brizzle, mattizzle boom shackalack, eleifend ma nizzle, gangster. Bizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Integizzle sempizzle velit gangster dope.</p>
+            <h3 class="enjoy-feature__column-title c-title--tertiary">Creating</h3>
+            <p class="enjoy-feature__detail">Sketch, design and create the best user experience.</p>
           </div>
         </div>
 
         <hr/>
         <div class="u-align-center">
-          <a href="https://www.linkedin.com/in/mehreenstavri" title="Mehreen Stavri - Linkedin" class="footer-bar__link">
+          <a href="https://www.linkedin.com/in/mehreenstavri" title="Mehreen Stavri - Linkedin" class="c-contact-link u-margin-right-l">
             <linkedin-icon/>
           </a>
 
-          <a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="footer-bar__link">
+          <a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="c-contact-link">
             CV
           </a>
         </div>

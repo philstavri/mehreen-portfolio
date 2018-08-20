@@ -6,27 +6,37 @@
 }
 
 .c-title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: 'Playfair Display', serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
+  font-size: 45px;
   letter-spacing: 1px;
 }
 
 .c-title--secondary {
+  font-family: 'Playfair Display', serif;
   font-weight: 300;
-  font-size: 42px;
-  color: #526488;
+  font-size: 30px;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
 
 .c-title--tertiary {
+  font-family: 'Playfair Display', serif;
   font-weight: 300;
-  font-size: 28px;
-  color: $color-1;
+  font-size: 22px;
+}
+
+
+.c-contact-link {
+  vertical-align: middle;
+  color: $highlight-2;
+
+  &:hover,
+  &:active,
+  &:focus{
+    color: $shade-1;
+  }
 }
 
 // --------- Third party -----------
@@ -35,3 +45,4 @@
   display: inline-block;
   vertical-align: top;
 }
+

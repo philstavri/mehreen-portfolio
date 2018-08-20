@@ -3,10 +3,9 @@
 
 hr {
   border: none;
-  height: 2px;
   width: 60%;
 
-  @include background-shade;
+  border-bottom: 2px solid $highlight-2;
   @include apply-value-to-props(margin-left margin-right, auto);
   @include spacing(margin-top margin-bottom, xxl);
 }
@@ -45,15 +44,22 @@ button {
 }
 
 a {
-  color: $color-1;
+  color: $shade-1;
+  text-decoration: none;
 
   &:visited,
   &:hover,
-  &:active {
-    color: $color-1;
+  &:active,
+  &:focus{
+    color: $highlight-2;
   }
+
 }
 
 html {
   overflow-y: scroll;
+}
+
+p {
+  color: $shade-1;
 }
