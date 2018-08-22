@@ -2,17 +2,17 @@
   <section class="work-page u-move-below-header u-full-width">
     <div class="u-align-center u-full-width-content u-margin-top-xxl">
       <h1 class="c-title--secondary">Work</h1>
-      <p>This is a collection of my work</p>
+      <p>This is a collection of some of my work</p>
       <hr/>
     </div>
     <two-col class="u-full-width-content" :flush="true">
       <div slot="first-col">
         <cover-image :url="require('~/assets/ti-scrapbook-empty.png')" height="400px"/>
       </div>
-      <div slot="second-col" class="u-background-color-highlight block-color">
+      <div slot="second-col" class="work-summary">
         <h1 class="c-title--secondary">Tourism Ireland - Scrapbook</h1>
-        <p>Providing users with a means to save and share items of interest.</p>
-        <router-link to="/work/airline-group" class="work-overview__link">
+        <p class="u-margin-bottom-xl">Providing users with a means to save and share items of interest.</p>
+        <router-link to="/work/airline-group" class="highlight-on-color">
           Read more
         </router-link>
       </div>
@@ -74,6 +74,14 @@ export default {
 <style lang="scss">
 @import "./styles/settings";
 @import "./styles/tools";
+
+.work-summary {
+  @include spacing(padding-left padding-right, xxl);
+  @include spacing(padding-top padding-bottom, xxxl);
+
+  background-color: $color-1;
+  height: 100%;
+}
 
 .block-color {
   height: 100%;

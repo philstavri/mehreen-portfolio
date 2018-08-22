@@ -58,9 +58,6 @@ a {
   text-decoration: none;
   outline: none;
 
-
-
-  &:visited,
   &:hover,
   &:active,
   &:focus{
@@ -77,11 +74,20 @@ a {
   &.highlight {
     color: $highlight-2;
 
-    &:visited,
     &:hover,
     &:active,
     &:focus{
       color: $highlight-1;
+    }
+  }
+
+  &.highlight-on-color {
+    color: $highlight-2;
+
+    &:hover,
+    &:active,
+    &:focus{
+      color: white;
     }
   }
 
