@@ -7,7 +7,7 @@
     </div>
     <two-col class="u-full-width-content" :flush="true">
       <div slot="first-col">
-        <cover-image :url="require('~/assets/ti-scrapbook-empty.png')" height="400px"/>
+        <cover-image :url="require('~/assets/ti-header-sketch.jpg')" height="400px"/>
       </div>
       <div slot="second-col" class="work-summary">
         <h1 class="c-title--secondary">Tourism Ireland - Scrapbook</h1>
