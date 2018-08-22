@@ -5,64 +5,35 @@
       <p>This is a collection of some of my work</p>
       <hr/>
     </div>
-    <two-col class="u-full-width-content" :flush="true">
-      <div slot="first-col">
-        <cover-image :url="require('~/assets/ti-header-sketch.jpg')" height="400px"/>
-      </div>
-      <div slot="second-col" class="work-summary">
-        <h1 class="c-title--secondary">Tourism Ireland - Scrapbook</h1>
-        <p class="u-margin-bottom-xl">Providing users with a means to save and share items of interest.</p>
-        <router-link to="/work/airline-group" class="highlight-on-color">
-          Read more
-        </router-link>
-      </div>
-    </two-col>
-    <div class="work-overview-collection">
-      <div class="work-overview work-overview-collection__item">
-        <img src="~/assets/ti-scrapbook-empty.png"/>
+    <work-overview class="u-margin-bottom-xxl"
+                   :url="require('~/assets/ti-header-sketch.jpg')"
+                   title="Tourism Ireland - Scrapbook"
+                   description="Providing users with a means to save and share items of interest."
+                   link="/work/airline-group">
+    </work-overview>
 
-        <h1 class="c-title--secondary">Tourism Ireland - Scrapbook</h1>
-        <p>Providing users with a means to save and share items of interest.</p>
-        <router-link to="/work/airline-group" class="work-overview__link">
-          Read more
-        </router-link>
+    <work-overview class="u-margin-bottom-xxl"
+                   :url="require('~/assets/plane-wing.jpg')"
+                   title="Corporate travel"
+                   description="Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love."
+                   link="/work/airline-group"
+                   :content-first="true">
+    </work-overview>
 
+    <work-overview :url="require('~/assets/plane-wing.jpg')"
+                   title="Corporate travel"
+                   description="Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love."
+                   link="/work/airline-group">
+    </work-overview>
 
-      </div>
-      <div class="work-overview work-overview-collection__item">
-        <img src="~/assets/plane-wing.jpg"/>
-
-        <h1 class="c-title--secondary">Corporate travel</h1>
-        <p>Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love. Croissant bear claw pastry. Powder jujubes tootsie roll sweet roll cupcake jelly-o jelly candy canes. Biscuit pastry bonbon biscuit topping jelly cheesecake.</p>
-        <a href="#" class="work-overview__link">
-          Read more
-        </a>
-
-
-      </div>
-      <div class="work-overview work-overview-collection__item">
-        <div class="work-overview__image-container">
-          <img src="~/assets/plane-wing.jpg"/>
-        </div>
-        <h1 class="c-title--secondary">Corporate travel</h1>
-        <p>Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love. Croissant bear claw pastry. Powder jujubes tootsie roll sweet roll cupcake jelly-o jelly candy canes. Biscuit pastry bonbon biscuit topping jelly cheesecake.</p>
-        <a href="#" class="work-overview__link">
-          Read more
-        </a>
-
-
-      </div>
-    </div>
   </section>
 </template>
 
 <script>
-import CoverImage from "@/components/CoverImage";
-import TwoCol from "@/components/TwoCol";
+import WorkOverview from "@/components/WorkOverview";
 export default {
   components: {
-    CoverImage,
-    TwoCol
+    WorkOverview
   },
   meta: {
     linkedMenuRoute: "work"
@@ -71,7 +42,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "./styles/settings";
 @import "./styles/tools";
 
@@ -101,7 +72,7 @@ export default {
   }
 }
 
-.work-overview {
+.work-overview-old {
   position: relative;
   display: block;
   text-decoration: none;

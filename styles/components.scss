@@ -1,4 +1,5 @@
 @import "settings";
+@import "tools";
 
 .c-page {
   min-height: 100vh;
@@ -6,25 +7,15 @@
 }
 
 .c-title {
-  font-family: 'Playfair Display', serif;
-  display: block;
-  font-weight: 300;
-  font-size: 45px;
-  letter-spacing: 1px;
+  @include title;
 }
 
 .c-title--secondary {
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
-  font-size: 30px;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  @include title("secondary");
 }
 
 .c-title--tertiary {
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
-  font-size: 22px;
+  @include title("tertiary");
 }
 
 // --------- Third party -----------

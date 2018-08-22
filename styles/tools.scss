@@ -41,4 +41,22 @@
   background: $shade;
 }
 
+@mixin title($type: null) {
+  @include spacing(margin-bottom, l);
+
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: 45px;
+  letter-spacing: 1px;
+
+  @if($type == "secondary") {
+    @include spacing(margin-bottom, m);
+    font-size: 30px;
+  }
+  @else if($type == "tertiary") {
+    @include spacing(margin-bottom, s);
+    font-size: 22px;
+  }
+}
+
 
