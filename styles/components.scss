@@ -27,18 +27,6 @@
   font-size: 22px;
 }
 
-
-.c-contact-link {
-  vertical-align: middle;
-  color: $highlight-2;
-
-  &:hover,
-  &:active,
-  &:focus{
-    color: $shade-1;
-  }
-}
-
 // --------- Third party -----------
 .material-design-icon__svg {
   fill: currentColor;

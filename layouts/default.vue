@@ -16,13 +16,7 @@
     </div>
     <footer class="footer-bar">
       <div class="footer-bar__links">
-        <a href="https://www.linkedin.com/in/mehreenstavri" title="Mehreen Stavri - Linkedin" class="footer-bar__link">
-          <linkedin-icon/>
-        </a>
-
-        <a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="footer-bar__link" >
-          CV
-        </a>
+        <contact-links></contact-links>
       </div>
 
 
@@ -32,15 +26,12 @@
 
 <script>
 import AppLogo from "@/components/AppLogo";
-import CvIcon from "vue-material-design-icons/file-pdf.vue";
-import LinkedinIcon from "vue-material-design-icons/linkedin.vue";
-
+import ContactLinks from "@/components/ContactLinks";
 
 export default {
   components: {
     AppLogo,
-    CvIcon,
-    LinkedinIcon,
+    ContactLinks,
   },
   methods: {
     isCurrentRoute(route) {
@@ -58,22 +49,23 @@ export default {
   @include full-width;
 
   margin-top: -$footer-height;
-  background-color: $color-4;
-  text-align: center;
-  //border-top: 1px solid $color-1; //TODO - adds thin border along top of footer
+  height: $footer-height;
+  background-color: $shade-2;
 
   &__links {
-    $border-size: 4px;
-    @include spacing(padding-top padding-bottom, m);
-    @include spacing(padding-left padding-right, xxl);
-    border-top: $border-size solid $color-1;
-    position: relative;
-    top: $border-size / -2;
+
+    @include full-width-content;
+    @include spacing(padding-left padding-right, s);
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+
 
     @media (min-width: 400px) {
-      display: inline-block;
       width: 30%;
       min-width: 350px;
+      margin: 0 auto;
     }
   }
 

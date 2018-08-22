@@ -29,15 +29,7 @@
         </div>
 
         <hr/>
-        <div class="u-align-center">
-          <a href="https://www.linkedin.com/in/mehreenstavri" title="Mehreen Stavri - Linkedin" class="c-contact-link u-margin-right-l">
-            <linkedin-icon/>
-          </a>
-
-          <a href="/Mehreen-Stavri-2018.pdf" title="Mehreen Stavri - CV" target="_blank" class="c-contact-link">
-            CV
-          </a>
-        </div>
+        <contact-links class="u-align-center"></contact-links>
 
       </div>
       <div slot="second-col">&nbsp;</div>
@@ -46,17 +38,15 @@
 </template>
 
 <script>
-import CvIcon from "vue-material-design-icons/file-pdf.vue";
-import LinkedinIcon from "vue-material-design-icons/linkedin.vue";
+  import ContactLinks from "@/components/ContactLinks";
+  import TwoCol from "@/components/TwoCol";
 
-import TwoCol from "@/components/TwoCol";
-
-export default {
-  components: { TwoCol, CvIcon, LinkedinIcon },
-  meta: {
-    linkedMenuRoute: "index"
-  },
-};
+  export default {
+    components: { ContactLinks, TwoCol },
+    meta: {
+      linkedMenuRoute: "index"
+    },
+  };
 </script>
 
 <style lang="scss">
