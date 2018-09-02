@@ -13,9 +13,9 @@
     </work-overview>
 
     <work-overview class="u-margin-bottom-xxl"
-                   :url="require('~/assets/plane-wing.jpg')"
-                   title="Corporate travel"
-                   description="Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love."
+                   :url="require('~/assets/tc-homepage-tablet-mobile.png')"
+                   title="A world-renowned travel company - Excursions"
+                   description="Improving the customer’s journey and overall experience of booking an excursion."
                    link="/work/airline-group"
                    :content-first="true">
     </work-overview>

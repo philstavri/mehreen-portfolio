@@ -39,7 +39,7 @@ export default {
 @import "./styles/tools";
 
 .cover-image {
-  background-position: top left;
+  background-position: top center;
   background-size: cover;
 }
 </style>
