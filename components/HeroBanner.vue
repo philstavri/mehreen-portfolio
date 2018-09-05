@@ -1,7 +1,7 @@
 <template>
   <div class="hero-banner" :style="getBackgroundImageCSS()">
-    <div class="hero-banner__content ">
-      <h1 class="hero-banner__title">{{title}}</h1>
+    <div class="hero-banner__content">
+      <h1 class="hero-banner__title c-title">{{title}}</h1>
       <div class="hero-banner__subtitle">{{subtitle}}</div>
     </div>
   </div>
@@ -32,20 +32,23 @@ export default {
   background-size: cover;
 
   &__content {
-    position: relative;
-    top: 50vh;
-    left: 5vw;
+    margin-top: 50vh;
+    margin-left: 5vw;
     color: $color-3;
-    background-color: rgba($color-1, 0.4);
+    background-color: rgba($shade-1, 0.90);
     display: inline-block;
-    @include spacing(padding, m);
+    @include spacing(padding-top padding-left padding-right, m);
+   @include spacing(padding-bottom, xl);
   }
 
   &__title {
-    font-weight: 500;
-    font-size: 8vh;
+    font-size: 6vh;
     display: table;
     @include spacing(padding-left padding-right, xs)
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
   }
 
   &__tags {

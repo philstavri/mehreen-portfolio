@@ -1,6 +1,8 @@
 <template>
   <div class="u-move-below-header u-align-center">
-    <hero-banner title="Tourism Ireland - Scrapbook" subtitle="Providing users with a means to save and share items of interest" :image="require('~/assets/ireland.jpg')"></hero-banner>
+    <hero-banner title="Tourism Ireland - Scrapbook"
+                 subtitle="Providing users with a means to save and share items of interest"
+                 :image="require('~/assets/ti-header-sketch.jpg')"></hero-banner>
     <detail-section title="The client" :align-center="true" class="u-margin-top-xxxl">Tourism Ireland - “Tourism Ireland is responsible for marketing the island of Ireland overseas as a holiday and business tourism destination.”</detail-section>
     <detail-section title="The goal">To design a Scrapbook functionality that allows users to save and share content, such as destinations and trip ideas, on Ireland.com, a tourism site. The feature needs to be simple to use and manage - users should be able to easily create a scrapbook, and add, view, and delete items within a scrapbook. It is also important that users have the ability to share their scrapbooks with friends. Furthermore, consideration must be given to registered/logged in users, and users who are not logged in to the the site.</detail-section>
     <detail-section title="My role" :align-center="true">Senior UX Architect. My responsibility was to design and document a new Scrapbook feature for the Ireland.com site.</detail-section>
