@@ -16,7 +16,7 @@
                    :url="require('~/assets/tc-homepage-tablet-mobile.png')"
                    title="A world-renowned travel company - Excursions"
                    description="Improving the customer’s journey and overall experience of booking an excursion."
-                   link="/work/airline-group"
+                   link="/work/travel-company"
                    :content-first="true">
     </work-overview>
 

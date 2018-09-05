@@ -25,13 +25,14 @@ export default {
 @import "./styles/tools";
 
 .caption-image {
+  text-align: left;
   max-width: 700px;
   margin: 0 auto;
   @include spacing(padding-top padding-bottom, xl);
 
   &__image {
     border: 1px solid $shade-1-light;
-    @include full-width;
+    max-width: 100%;
   }
 
   &__caption {
