@@ -1,8 +1,8 @@
 <template>
-    <div class="app-logo">
+    <router-link class="app-logo" to="/">
       <span class="app-logo__short">MS</span>
       <span class="app-logo__long">Mehreen Stavri</span>
-    </div>
+    </router-link>
 </template>
 
 <style lang="scss">
@@ -13,6 +13,10 @@
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: normal;
+
+  &:hover {
+    color: $shade-1;
+  }
 
   &__long {
     display: none;
