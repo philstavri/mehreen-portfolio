@@ -20,9 +20,11 @@
                    :content-first="true">
     </work-overview>
 
-    <work-overview :url="require('~/assets/plane-wing.jpg')"
-                   title="Corporate travel"
-                   description="Cupcake ipsum dolor sit amet oat cake jelly beans gummi bears I love."
+    <work-overview :url="require('~/assets/sa-logo.png')"
+                   :stretch-image="true"
+                   image-background-color="#000"
+                   title="Star Alliance - Website redesign"
+                   description="Creating a seamless and premium digital experience for millions of travellers across the network."
                    link="/work/airline-group">
     </work-overview>
 

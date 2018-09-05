@@ -1,7 +1,7 @@
 <template>
   <two-col class="u-full-width-content work-overview" :flush="true">
     <div :slot="imageCol">
-      <cover-image :url="url" height="400px"/>
+      <cover-image :url="url" height="400px" :is-contain="stretchImage" :background-color="imageBackgroundColor"/>
     </div>
     <div :slot="contentCol" class="work-overview__content">
       <h1 class="work-overview__title">{{title}}</h1>
@@ -27,7 +27,9 @@
       title: { type: String, required: true },
       description: { type: String, required: true },
       link: { type: String, required: true },
-      contentFirst: { type: Boolean, required: false, default: false }
+      contentFirst: { type: Boolean, required: false, default: false },
+      stretchImage: { type: Boolean, required: false, default: false },
+      imageBackgroundColor: { type: String, required: false, default: null },
     },
     data: function() {
       return {

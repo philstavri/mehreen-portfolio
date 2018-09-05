@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="cover-image" :style="imageStyles">&nbsp;</div>
+    <div class="cover-image" v-bind:class="{ 'cover-image--is-contain': isContain }" :style="imageStyles">&nbsp;</div>
     <p v-if="description">{{description}}</p>
   </div>
 </template>
@@ -18,18 +18,31 @@ export default {
     },
     description: {
       type: String
+    },
+    isContain: {
+      type: Boolean,
+      default: false
+    },
+    backgroundColor: {
+      type: String,
+      default: null
     }
+
   },
   computed: {
     imageStyles() {
-      let backgroundImageStyle = `background-image: url(${this.url}); `;
+      let imageStyles = `background-image: url(${this.url});`;
       let heightStyle;
 
       if(this.height) {
-        heightStyle = `height: ${this.height};`;
+        imageStyles += ` height: ${this.height};`;
       }
 
-      return backgroundImageStyle + heightStyle;
+      if(this.backgroundColor) {
+        imageStyles += ` background-color: ${this.backgroundColor};`;
+      }
+
+      return imageStyles;
     }
   }
 }
@@ -39,7 +52,12 @@ export default {
 @import "./styles/tools";
 
 .cover-image {
-  background-position: top center;
+  background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
+
+  &--is-contain {
+     background-size: contain;
+  }
 }
 </style>
