@@ -9,7 +9,7 @@
                    :url="require('~/assets/ti-header-sketch.jpg')"
                    title="Tourism Ireland - Scrapbook"
                    description="Providing users with a means to save and share items of interest."
-                   link="/work/airline-group">
+                   link="/work/tourism-ireland">
     </work-overview>
 
     <work-overview class="u-margin-bottom-xxl"
