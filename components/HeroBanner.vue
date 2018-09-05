@@ -28,7 +28,7 @@ export default {
 .hero-banner {
   text-align: left;
   min-height: 100vh;
-  background: url(~/assets/plane-wing.jpg) no-repeat top left fixed;
+  background: no-repeat top left fixed;
   background-size: cover;
 
   &__content {
