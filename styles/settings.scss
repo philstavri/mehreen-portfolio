@@ -28,6 +28,10 @@ $highlight-2: #fd6b54;
 $shade-1: #373737;
 $shade-2: #f7f8f8;
 
+$shade-1-light: lighten($shade-1, 60%);
+
+$shade-2-dark: darken($shade-2, 60%);
+
 $shade-position: 35%;
 $shade-gap: 1%;
 $shade-change-position: $shade-position + $shade-gap;

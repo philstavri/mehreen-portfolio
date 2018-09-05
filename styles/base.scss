@@ -8,6 +8,10 @@ hr {
   border-bottom: 2px solid $highlight-2;
   @include apply-value-to-props(margin-left margin-right, auto);
   @include spacing(margin-top margin-bottom, xxl);
+
+  &.narrow {
+    width: 20%;
+  }
 }
 
 input {
@@ -99,4 +103,8 @@ html {
 
 p {
   color: $shade-1;
+}
+
+li {
+  line-height: 1.5em;
 }

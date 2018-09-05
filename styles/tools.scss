@@ -59,4 +59,10 @@
   }
 }
 
+@mixin text-mini {
+  font-style: italic;
+  color: $shade-2-dark;
+  font-size: 0.85rem;
+}
+
 

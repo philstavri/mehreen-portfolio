@@ -65,3 +65,7 @@ $align-positions: center, left, right;
   color: $highlight-2;
 }
 
+.u-text-mini {
+  @include text-mini;
+}
+
