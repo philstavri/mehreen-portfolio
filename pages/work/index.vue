@@ -25,7 +25,7 @@
                    image-background-color="#000"
                    title="Star Alliance - Website redesign"
                    description="Creating a seamless and premium digital experience for millions of travellers across the network."
-                   link="/work/airline-group">
+                   link="/work/star-alliance">
     </work-overview>
 
   </section>
