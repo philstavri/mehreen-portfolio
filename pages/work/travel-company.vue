@@ -45,7 +45,13 @@
       <div class="u-align-center u-margin-top-xxxl">
         <caption-image :url="require('~/assets/tc-workshop-agenda.png')" caption="Workshop agenda"/>
 
+        <caption-image :url="require('~/assets/tc-booking-flow.jpg')" caption="Booking flow"/>
+
         <caption-image :url="require('~/assets/tc-sitemap.png')" caption="Sitemap"/>
+
+        <caption-image :url="require('~/assets/tc-booking-sketches.jpg')" caption="Initial screen sketches"/>
+
+        <caption-image :url="require('~/assets/tc-booking-process.jpg')" caption="Booking process"/>
 
         <caption-image :url="require('~/assets/tc-homepage-lo-fi.png')" caption="Low fidelity wireframe, desktop - Homepage"/>
 

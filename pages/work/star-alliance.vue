@@ -61,6 +61,10 @@
           </div>
         </two-col>
 
+        <caption-image :url="require('~/assets/sa-ffp-paper-prototype.jpg')" caption="Paper prototype - Sign up for Frequent Flyer Programme"/>
+
+        <caption-image :url="require('~/assets/sa-services.jpg')" caption="Sketch - Services"/>
+
         <caption-image :url="require('~/assets/sa-home-desktop.png')" caption="Wireframes (templates) - Home, dekstop"/>
 
         <caption-image :url="require('~/assets/sa-home-mobile.png')" caption="Wireframes (templates) - Home, mobile"/>
@@ -77,7 +81,11 @@
 
         <caption-image :url="require('~/assets/sa-sitemap.png')" caption="Sitemap"/>
 
-        <caption-image :url="require('~/assets/sa-smart-bar.png')" caption="Smart Bar concept - interactions"/>
+        <caption-image :url="require('~/assets/sa-smartbar-desktop.jpg')" caption="Smart Bar concept - Desktop workings"/>
+
+        <caption-image :url="require('~/assets/sa-smartbar-mobile.jpg')" caption="Smart Bar concept - Mobile workings"/>
+
+        <caption-image :url="require('~/assets/sa-smart-bar.png')" caption="Smart Bar concept - Interactions"/>
       </div>
     </detail-section>
     <detail-section title="Output">

@@ -29,6 +29,8 @@
 
         <caption-image :url="require('~/assets/ti-user-flows.png')" caption="User flows - Multiple vs Individual view of scrapbooks"/>
 
+        <caption-image :url="require('~/assets/ti-my-scrapbooks.jpg')" caption="Sketch - My Scrapbooks"/>
+
         <caption-image :url="require('~/assets/ti-not-signed-in-adding-item.png')" caption="Adding first item - signed in/not signed in"/>
 
         <caption-image :url="require('~/assets/ti-signed-in-adding-item.png')" caption="Adding an item to a particular scrapbook - signed in"/>
