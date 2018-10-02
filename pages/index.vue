@@ -54,11 +54,21 @@
 .about-page {
   min-height: 100vh;
   background-color: $color-1;
-  background-image: url(~/assets/about-background.jpg);
-  background-repeat: no-repeat;
-  background-position: left 50vw center;
-  background-size: cover;
   padding-bottom: 100px;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    content: " ";
+    top: 0;
+    right: 0;
+    background-image: url(~/assets/mehreen-headshot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+  }
 
   &__content {
     @include full-width-content;
@@ -67,7 +77,7 @@
   }
 
   @media (max-width: 700px) {
-    padding-top: 200px;
+    padding-top: 300px;
     background-position: left top;
     background-size: contain;
     display: flex;
@@ -75,6 +85,20 @@
 
     &__content {
       background-color: $color-1;
+    }
+
+    &:after {
+      top: $header-height;
+      width: 100%;
+      height: 250px;
+      background-position: center bottom -110px;
+    }
+  }
+
+  @media (max-width: 520px) {
+
+    &:after {
+     background-position: center bottom -40px;
     }
   }
 }
