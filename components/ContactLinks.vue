@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="https://www.linkedin.com/in/mehreenstavri" title="Mehreen Stavri - Linkedin" class="c-contact-link u-margin-right-l">
+    <a href="https://www.linkedin.com/in/mehreenstavri" title="Mehreen Stavri - Linkedin" class="c-contact-link u-margin-right-l" target="_blank">
       <linkedin-icon/>
     </a>
 
