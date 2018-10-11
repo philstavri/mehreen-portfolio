@@ -5,19 +5,10 @@
       <p>This is a collection of some of my work</p>
       <hr/>
     </div>
-    <work-overview class="u-margin-bottom-xxl"
-                   :url="require('~/assets/ti-header-sketch.jpg')"
+    <work-overview :url="require('~/assets/ti-header-sketch.jpg')"
                    title="Tourism Ireland - Scrapbook"
                    description="Providing users with a means to save and share items of interest."
                    link="/work/tourism-ireland">
-    </work-overview>
-
-    <work-overview class="u-margin-bottom-xxl"
-                   :url="require('~/assets/tc-homepage-tablet-mobile.png')"
-                   title="A world-renowned travel company - Excursions"
-                   description="Improving the customer’s journey and overall experience of booking an excursion."
-                   link="/work/travel-company"
-                   :content-first="true">
     </work-overview>
 
     <work-overview :url="require('~/assets/sa-logo.png')"
@@ -25,7 +16,14 @@
                    image-background-color="#000"
                    title="Star Alliance - Website redesign"
                    description="Creating a seamless and premium digital experience for millions of travellers across the network."
-                   link="/work/star-alliance">
+                   link="/work/star-alliance"
+                   :content-first="true">
+    </work-overview>
+
+    <work-overview :url="require('~/assets/tc-homepage-tablet-mobile.png')"
+                   title="A world-renowned travel company - Excursions"
+                   description="Improving the customer’s journey and overall experience of booking an excursion."
+                   link="/work/travel-company">
     </work-overview>
 
   </section>
