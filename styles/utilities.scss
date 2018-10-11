@@ -69,3 +69,8 @@ $align-positions: center, left, right;
   @include text-mini;
 }
 
+.u-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

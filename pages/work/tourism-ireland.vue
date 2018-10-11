@@ -58,7 +58,7 @@
       <p>Produced and delivered high standard user journeys, wireframes and documentation within tight timescales.</p>
 
     </detail-section>
-
+    <work-navigation next="work-star-alliance"/>
   </div>
 </template>
 
@@ -68,6 +68,7 @@ import CoverImage from "@/components/CoverImage";
 import DetailSection from "@/components/DetailSection";
 import HeroBanner from "@/components/HeroBanner";
 import TwoCol from "@/components/TwoCol";
+import WorkNavigation from "@/components/WorkNavigation";
 
 export default {
   meta: {
@@ -80,6 +81,7 @@ export default {
     DetailSection,
     HeroBanner,
     TwoCol,
+    WorkNavigation,
   }
 }
 </script>

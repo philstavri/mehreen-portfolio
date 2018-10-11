@@ -81,7 +81,7 @@
       <p>Produced high-fidelity, clickable wireframes - I enjoyed the challenge of producing a functional prototype, and greatly enhanced my Axure skills in the process by learning new functionality.</p>
 
     </detail-section>
-
+    <work-navigation prev="work-star-alliance"/>
   </div>
 </template>
 
@@ -91,6 +91,7 @@ import CoverImage from "@/components/CoverImage";
 import DetailSection from "@/components/DetailSection";
 import HeroBanner from "@/components/HeroBanner";
 import TwoCol from "@/components/TwoCol";
+import WorkNavigation from "@/components/WorkNavigation";
 
 export default {
   meta: {
@@ -103,6 +104,7 @@ export default {
     DetailSection,
     HeroBanner,
     TwoCol,
+    WorkNavigation,
   }
 }
 </script>

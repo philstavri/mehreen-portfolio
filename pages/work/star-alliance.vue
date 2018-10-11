@@ -115,7 +115,7 @@
       <p class="u-margin-bottom-l">Worked within a multidisciplinary team - shared ideas and concepts, discussed challenges, and worked together to achieve an optimal solution.</p>
       <p>Delivered a number of additional projects for the client, and provided ongoing UX support.</p>
     </detail-section>
-
+    <work-navigation prev="work-tourism-ireland" next="work-travel-company"/>
   </div>
 </template>
 
@@ -125,6 +125,7 @@ import CoverImage from "@/components/CoverImage";
 import DetailSection from "@/components/DetailSection";
 import HeroBanner from "@/components/HeroBanner";
 import TwoCol from "@/components/TwoCol";
+import WorkNavigation from "@/components/WorkNavigation";
 
 export default {
   meta: {
@@ -137,6 +138,7 @@ export default {
     DetailSection,
     HeroBanner,
     TwoCol,
+    WorkNavigation,
   }
 }
 </script>
