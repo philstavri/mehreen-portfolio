@@ -45,6 +45,8 @@
       <div class="u-align-center u-margin-top-xxxl">
         <caption-image :url="require('~/assets/tc-workshop-agenda.png')" caption="Workshop agenda"/>
 
+        <caption-image :url="require('~/assets/tc-holiday-timeline.jpg')" caption="Holiday stages / timeline"/>
+
         <caption-image :url="require('~/assets/tc-booking-flow.jpg')" caption="Booking flow"/>
 
         <caption-image :url="require('~/assets/tc-sitemap.png')" caption="Sitemap"/>
@@ -75,7 +77,7 @@
       <caption-image :url="require('~/assets/tc-excursion-detail-mobile-pickup.png')" caption="Excursion detail, mobile"/>
       <caption-image :url="require('~/assets/tc-excursion-detail-tablet-pickup.png')" caption="Excursion detail, tablet"/>
     </detail-section>
-    <detail-section title="Personal achievements" :hide-separator="true" :align-center="true">
+    <detail-section title="Personal achievements" :hide-separator="true">
       <p class="u-margin-bottom-l">Worked with a large, global client on an interesting and challenging project.</p>
       <p class="u-margin-bottom-l">Responsible for preparing and leading a workshop abroad, where I met and collaborated with key stakeholders.</p>
       <p>Produced high-fidelity, clickable wireframes - I enjoyed the challenge of producing a functional prototype, and greatly enhanced my Axure skills in the process by learning new functionality.</p>

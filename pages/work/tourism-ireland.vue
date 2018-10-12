@@ -42,8 +42,8 @@
     </detail-section>
     <detail-section title="Output" :align-center="true">
      <p class="u-margin-bottom-xl">An easy to use, responsive Scrapbook tool that allows users to collect and share content on Ireland.com, to assist them in planning a trip.</p>
-     <p><a href="https://www.ireland.com/en-gb/" class="highlight">Ireland.com homepage</a></p>
-     <p><a href="https://www.ireland.com/en-gb/scrapbook/" class="highlight">Ireland.com My Scrapbook</a></p>
+     <p><a href="https://www.ireland.com/en-gb/" class="highlight" target="_blank">Ireland.com homepage</a></p>
+     <p><a href="https://www.ireland.com/en-gb/scrapbook/" class="highlight" target="_blank">Ireland.com My Scrapbook</a></p>
 
      <p class="u-margin-top-l u-text-mini">* Note: screenshots taken from website.</p>
 
@@ -52,7 +52,7 @@
       <caption-image :url="require('~/assets/ti-multiple-items.png')" caption="My Scrapbooks - multiple items saved"/>
       <caption-image :url="require('~/assets/ti-multiple-items-fb.png')" caption="Sharing scrapbook - Facebook message"/>
     </detail-section>
-    <detail-section title="Personal achievements" :hide-separator="true" :align-center="true">
+    <detail-section title="Personal achievements" :hide-separator="true">
       <p class="u-margin-bottom-l">Worked collaboratively alongside designers and developers to deliver a key functionality that is live and aims to increase user engagement and interaction.</p>
 
       <p>Produced and delivered high standard user journeys, wireframes and documentation within tight timescales.</p>

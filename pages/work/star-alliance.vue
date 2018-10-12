@@ -99,7 +99,7 @@
         <li>displays more concise and easy to read content;</li>
       </ul>
 
-      <p class="u-margin-top-xl u-margin-bottom-m"><a class="highlight" href="https://www.staralliance.com/en/web/uk/home">UK regional site</a></p>
+      <p class="u-margin-top-xl u-margin-bottom-m"><a class="highlight" href="https://www.staralliance.com/en/web/uk/home" target="_blank">UK regional site</a></p>
 
       <p class="u-text-mini">* Note: screenshots taken from website or visual design documents.</p>
 
